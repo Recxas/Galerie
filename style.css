@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  background-color: #fdf0d5;
+  margin: 0;
+  
+}
+
+header {
+  font-family: "Madimi One", sans-serif;
+  background-color: #003049;
+  color: white;
+  text-align: center;
+  /* top right bottom left */
+  padding: 32px 0 5px 0;
+  margin: 0 0 5px 0;
+}
+
+.main {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+/* Créez 3 colonnes égales côte à côte  */
+.galerie {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.galerie img {
+  margin: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive - crée une disposition en deux colonnes au lieu de 3 colonnes */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive - empile les deux colonnes l'une sur l'autre au lieu de l'une à côté de l'autre */
+@media screen and (max-width: 600px) {
+  .galerie {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+  figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 0;
+    text-align: center;
+    margin: 0 0 2% 0;
+    background-color: #003049;
+    border-radius: 3px;
+  }
+
+  figcaption img{
+    border-start-start-radius: 3px;
+  }
+
+  footer{
+    font-family: "Madimi One", sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: #003049;
+  }
